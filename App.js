@@ -5,3 +5,4 @@ alert(welcome);
 console;
 ddd;
 ssss;
+sssss;
