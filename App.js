@@ -3,3 +3,5 @@ var welcome = "this scrpit works " + username;
 
 alert(welcome);
 console;
+ddd;
+ssss;
