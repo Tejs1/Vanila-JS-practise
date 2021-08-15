@@ -3,12 +3,12 @@
 
 // alert(welcome);
 
-var btnTranslate = document.querySelector("#btn-translate");
-var outputDiv = document.querySelector("#output");
-var textInput = document.querySelector("#text-input");
+const btnTranslate = document.querySelector("#btn-translate");
+const outputDiv = document.querySelector("#output");
+const textInput = document.querySelector("#text-input");
 
 //var url = "https://lessonfourapi.tejs1.repl.co/translate/yoda.json";
-var url = "https://api.funtranslations.com/translate/minion.json";
+const url = "https://api.funtranslations.com/translate/minion.json";
 function urlcreator(text) {
   return url + "?text=" + text;
 }
@@ -21,6 +21,7 @@ btnTranslate.addEventListener("click", clickHandler);
 
 function clickHandler() {
   var inputText = textInput.value;
+  //getting info from server by doing fetch call
 
   fetch(urlcreator(inputText))
     .then((response) => response.json())
